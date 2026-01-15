@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Student Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #1e293b;
+      border-bottom: 2px solid #1e293b;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      max-width: 800px;
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .skills li {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>IT Student | Aspiring Intern | Web & Software Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am an IT student who has just completed my third year at Stamford University.
+      I have a strong interest in web design, software development, and networking.
+      I am currently seeking an internship where I can apply my technical skills,
+      gain real-world experience, and continue learning from industry professionals.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Basic Networking (Cisco)</li>
+      <li>Linux Basics</li>
+      <li>Data Analysis</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>University Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Tour & Travel Website</h3>
+        <p>
+          Designed and developed a responsive tour and travel website using HTML and CSS.
+          Focused on layout design, navigation, and user-friendly interface.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Linux Server Project</h3>
+        <p>
+          Installed and configured Linux services such as Apache, DNS, and NTP.
+          Created a static website and performed basic network troubleshooting.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>IoT Moisture Sensor System</h3>
+        <p>
+          Built an IoT-based watering system using ESP8266, sensors, LCD, and Blynk.
+          Automated watering based on soil moisture levels.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Data Analysis Project</h3>
+        <p>
+          Analyzed student exam scores using clustering techniques (K-Means).
+          Focused on data preparation, performance evaluation, and interpretation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+    <p>GitHub: github.com/yourusername</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
