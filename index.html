@@ -25,6 +25,16 @@
       text-align: center;
     }
 
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+    }
+
     header h1 {
       font-size: 2.2rem;
     }
@@ -119,13 +129,60 @@
       padding: 15px;
       margin-top: 40px;
     }
+  @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      section {
+        padding: 30px 15px;
+      }
+
+      .skills ul {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 25px 15px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        padding: 15px 5px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .project-card {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Your Name</h1>
-    <p>IT Student | Aspiring Intern | Web & Software Enthusiast</p>
+    <!-- Replace profile.jpg with your CV photo file -->
+    <img src="profile.JPEG" alt="Profile Photo" class="profile-pic" />
+    <h1>Naing Min Khant</h1>
+    <p>Information Technology Student | Aspiring Intern</p>
   </header>
 
   <nav>
@@ -138,10 +195,7 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I am an IT student who has just completed my third year at Stamford University.
-      I have a strong interest in web design, software development, and networking.
-      I am currently seeking an internship where I can apply my technical skills,
-      gain real-world experience, and continue learning from industry professionals.
+      I am a motivated and adaptable IT student with a strong interest in web design and software development, possessing hands-on knowledge of HTML, CSS, JavaScript, Java, Python, networking fundamentals, and data analysis. Seeking an entry-level position or internship where I can apply my technical skills, continue learning, and contribute to building efficient, user-friendly, and innovative digital solutions.
     </p>
   </section>
 
