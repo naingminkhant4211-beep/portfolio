@@ -191,6 +191,41 @@
         padding: 15px;
       }
     }
+    .contact-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-btn {
+  padding: 12px 22px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .contact-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-btn {
+    text-align: center;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -219,20 +254,7 @@
     </p>
   </section>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>Basic Networking (Cisco)</li>
-      <li>Linux Basics</li>
-      <li>Data Analysis</li>
-      <li>IoT</li>
-      <li>SQL and Databases</li>
-    </ul>
-  </section>
+ 
 
   <section id="projects">
     <h2>University Projects</h2>
@@ -273,32 +295,46 @@
      </div>
   </section>
 
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Basic Networking (Cisco)</li>
+      <li>Linux Basics</li>
+      <li>Data Analysis</li>
+      <li>IoT</li>
+      <li>SQL and Databases</li>
+    </ul>
+  </section>
+
   <section id="contact" class="contact">
   <h2>Contact</h2>
   <p>Feel free to reach out to me through the platforms below.</p>
 
-  <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:15px;">
-    <a href="mailto:2209230006@students.stamford.edu"
-       style="padding:12px 20px; background:#38bdf8; color:#020617; text-decoration:none; border-radius:8px; font-weight:bold;">
-       📧 Email Me
+  <div class="contact-buttons">
+    <a href="mailto:2209230006@students.stamford.edu" class="contact-btn">
+      📧 Email Me
     </a>
 
     <a href="https://www.linkedin.com/in/naing-min-khant-a97325368"
-       target="_blank"
-       style="padding:12px 20px; background:#38bdf8; color:#020617; text-decoration:none; border-radius:8px; font-weight:bold;">
-       🔗 LinkedIn
+       target="_blank" class="contact-btn">
+      🔗 LinkedIn
     </a>
 
     <a href="https://github.com/naingminkhant4211-beep"
-       target="_blank"
-       style="padding:12px 20px; background:#38bdf8; color:#020617; text-decoration:none; border-radius:8px; font-weight:bold;">
-       💻 GitHub
+       target="_blank" class="contact-btn">
+      💻 GitHub
     </a>
   </div>
 </section>
 
+
+
   <footer>
-    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+    <p>&copy; 2026 Naing Min Khant. All Rights Reserved.</p>
   </footer>
 
 </body>
