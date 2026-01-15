@@ -13,15 +13,15 @@
     }
 
     body {
-      background-color: #f4f6f8;
-      color: #333;
+      background-color: #0b1220;
+      color: #e5e7eb;
       line-height: 1.6;
     }
 
     header {
-      background: #1e293b;
+      background: linear-gradient(135deg, #020617, #0f172a);
       color: #fff;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
@@ -33,10 +33,20 @@
       border: 4px solid #fff;
       margin-bottom: 15px;
     }
+
+    @media (max-width: 480px) {
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
     
 
     header h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
+      color: #38bdf8; /* pop color */
+      letter-spacing: 1px;
     }
 
     header p {
@@ -45,8 +55,8 @@
     }
 
     nav {
-      background: #0f172a;
-      padding: 10px;
+      background: #020617;
+      padding: 12px;
       text-align: center;
     }
 
@@ -69,14 +79,15 @@
 
     section h2 {
       margin-bottom: 20px;
-      color: #1e293b;
-      border-bottom: 2px solid #1e293b;
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
       display: inline-block;
       padding-bottom: 5px;
     }
 
     .about p {
       max-width: 800px;
+      color: #e5e7eb;
     }
 
     .skills ul {
@@ -88,11 +99,11 @@
     }
 
     .skills li {
-      background: #fff;
+      background: #020617;
       padding: 15px;
       border-radius: 8px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
     }
 
     .projects {
@@ -103,15 +114,21 @@
     }
 
     .project-card {
-      background: #fff;
+      background: #020617;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     }
 
     .project-card h3 {
       margin-bottom: 10px;
-      color: #0f172a;
+      color: #38bdf8;
     }
 
     .project-card p {
@@ -123,8 +140,8 @@
     }
 
     footer {
-      background: #1e293b;
-      color: #fff;
+      background: #020617;
+      color: #94a3b8;
       text-align: center;
       padding: 15px;
       margin-top: 40px;
@@ -182,7 +199,7 @@
     <!-- Replace profile.jpg with your CV photo file -->
     <img src="profile.JPEG" alt="Profile Photo" class="profile-pic" />
     <h1>Naing Min Khant</h1>
-    <p>Information Technology Student | Aspiring Intern</p>
+    <p>Information Technology Student | Aspiring Intern | Web & Network Enthusiast</p>
   </header>
 
   <nav>
@@ -195,20 +212,25 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I am a motivated and adaptable IT student with a strong interest in web design and software development, possessing hands-on knowledge of HTML, CSS, JavaScript, Java, Python, networking fundamentals, and data analysis. Seeking an entry-level position or internship where I can apply my technical skills, continue learning, and contribute to building efficient, user-friendly, and innovative digital solutions.
+      I am an IT student who has just completed my third year at Stamford University.
+      I have a strong interest in web design, software development, and networking.
+      I am currently seeking an internship where I can apply my technical skills,
+      gain real-world experience, and continue learning from industry professionals.
     </p>
   </section>
 
   <section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
-      <li>HTML5</li> 
+      <li>HTML5</li>
       <li>JavaScript</li>
       <li>Java</li>
       <li>Python</li>
       <li>Basic Networking (Cisco)</li>
       <li>Linux Basics</li>
       <li>Data Analysis</li>
+      <li>IoT</li>
+      <li>SQL and Databases</li>
     </ul>
   </section>
 
@@ -216,12 +238,8 @@
     <h2>University Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <h3>Tour & Travel Website</h3>
-        <p>
-          Designed and developed a responsive tour and travel website using HTML and CSS.
-          Focused on layout design, navigation, and user-friendly interface.
-        </p>
-      </div>
+        <h3>University Canteen POS system</h3>
+         <p> Designed and developed POS program with java. It lets the user choose the menu that the customer orderd and calculate the total. It also check the stocks and the amount of menu sold. </p> </div>
 
       <div class="project-card">
         <h3>Linux Server Project</h3>
@@ -247,13 +265,17 @@
         </p>
       </div>
     </div>
+    <div class="project-card"> <h3>Website for Fastfood Chain</h3> 
+        <p> Designed and developed a responsive website for a fast food chain company with bootstap and html </p>
+     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
-    <p>GitHub: github.com/yourusername</p>
+    <p>Email:        2209230006@students.stamford.edu</p>
+    <p>LinkedIn:     linkedin.com/in/naing-min-khant-a97325368</p>
+    <p>GitHub:       github.com/naingminkhant4211-beep</p>
+    <p>Phone:        0991107600</p>
   </section>
 
   <footer>
